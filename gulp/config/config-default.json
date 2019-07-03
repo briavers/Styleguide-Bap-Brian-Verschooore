@@ -1,8 +1,8 @@
 {
-	"PROJECT_TITLE": "Project",
-	"PROJECT_DESCRIPTION": "Styleguide for ...",
-	"PROJECT_URL": "http://[PROJECT NAME].brandplatform.be",
-	"CDN_URL": "https://cdn.brandplatform.be/[PROJECT NAME]",
+	"PROJECT_TITLE": "BAP Brian Verschoore",
+	"PROJECT_DESCRIPTION": "Styleguide for BAP Brian Verschoore",
+	"PROJECT_URL": "http://styleguide.foranewbeginning.eu",
+	"CDN_URL": "",
 
 	"FTP": false,
 	"FTP_HOST": "",
