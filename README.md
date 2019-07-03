@@ -2,7 +2,8 @@ Default Styleguide
 =================
 
 Frontend boilerplate/utility-belt/... running on [Gulp](http://gulpjs.com/), [Sass](http://sass-lang.com/) & [nunjucks templates](https://mozilla.github.io/nunjucks/)
-Build with love @littlemissrobot to kickstart projects
+Boilerplate build with love @littlemissrobot to kickstart projects 
+Finished By Brian Verschoore
 
 
 Principle
