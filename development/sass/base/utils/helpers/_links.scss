@@ -1,0 +1,57 @@
+// -------------------------------------------------------------------
+// :: LINK HELPERS
+// -------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------
+// :: LINK WITHOUT TEXT DECORATION
+// -------------------------------------------------------------------
+
+%u-link-unstyled {
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.u-link-unstyled {
+	@extend %u-link-unstyled;
+}
+
+%u-link-unstyled-sm {
+	@include at($screen-sm) {
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.u-link-unstyled-sm {
+	@extend %u-link-unstyled-sm;
+}
+
+
+// -------------------------------------------------------------------
+// :: INVERTED LINK
+// -------------------------------------------------------------------
+
+%u-link-inverted {
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
+}
+
+.u-link-inverted {
+	@extend %u-link-inverted;
+}

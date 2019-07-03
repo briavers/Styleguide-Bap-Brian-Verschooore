@@ -1,0 +1,35 @@
+// -------------------------------------------------------------------
+// :: INFO BLOCK
+// -------------------------------------------------------------------
+
+.m-info-block {
+	position: relative;
+
+	padding: rem(20px) rem(20px) rem(20px) rem(60px);
+
+	background-color: $white;
+
+	@include at($screen-sm) {
+		height: 100%;
+		min-height: rem(160px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: INFO BLOCK
+// -------------------------------------------------------------------
+
+.m-info-block__icon {
+	position: absolute;
+	top: rem(20px);
+	left: rem(20px);
+
+	color: $primary-color;
+}
+
+.m-info-block__title {
+	margin-bottom: rem(5px);
+
+	font-weight: $font-weight-bold;
+}

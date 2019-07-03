@@ -1,0 +1,150 @@
+// -------------------------------------------------------------------
+// :: SEARCH
+// -------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------
+// :: SEARCH ELEMENTS
+// -------------------------------------------------------------------
+
+.o-search__labels {
+	position: relative;
+
+	padding: $spacer;
+
+	background-color: $white;
+}
+
+.o-search__filters {
+
+	@include to($screen-sm) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background-color: $white;
+
+		z-index: layer("filters");
+
+		transform: translateY(100%);
+		transition: transform $animation-normal;
+	}
+}
+
+.o-search__filters__body {
+
+	@include to($screen-sm) {
+		-webkit-overflow-scrolling: touch;
+		overflow-y: auto;
+
+		flex-grow: 1;
+	}
+}
+
+.o-search__filters__header {
+	display: flex;
+	align-items: center;
+
+	@include to($screen-sm) {
+		justify-content: center;
+
+		padding: $spacer 0;
+	}
+
+	@include at($screen-sm) {
+		min-height: rem(46px);
+
+		margin-bottom: rem(20px);
+	}
+}
+
+.o-search__bar {
+	display: flex;
+
+	margin-bottom: rem(20px);
+
+	@include to($screen-sm) {
+		flex-direction: column;
+	}
+
+	@include at($screen-sm) {
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.o-search__results {
+
+	@include at($screen-sm) {
+		padding-top: $spacer * 2;
+
+		border-top: $border-dark;
+	}
+}
+
+.o-search__results__labels {
+	display: flex;
+
+	margin-top: rem(-25px);
+	margin-bottom: rem(15px);
+}
+
+.o-search__results__filters {
+	flex-grow: 1;
+
+	@include at($screen-md) {
+		display: flex;
+	}
+
+	p {
+
+		@include to($screen-md) {
+			margin-bottom: $spacer / 2;
+		}
+
+		@include at($screen-md) {
+			flex-shrink: 0;
+
+			margin-right: $spacer;
+		}
+	}
+}
+
+.o-search__results__link {
+	flex-shrink: 0;
+
+	margin-left: $spacer;
+}
+
+.o-search__footer {
+	display: flex;
+	justify-content: center;
+
+	margin-top: rem(40px);
+
+	@include at($screen-sm) {
+		margin-top: rem(60px);
+	}
+
+	@include at($screen-md) {
+		margin-top: rem(80px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: SEARCH MODIFIERS
+// -------------------------------------------------------------------
+
+.o-search__filters.is-open {
+
+	@include to($screen-sm) {
+		transform: translateY(0);
+	}
+}

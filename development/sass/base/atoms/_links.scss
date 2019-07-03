@@ -1,0 +1,54 @@
+// -------------------------------------------------------------------
+// :: LINK
+// -------------------------------------------------------------------
+
+a,
+.is-hyperlink,
+.a-link {
+
+	> [class*="icon"] {
+		display: inline-block;
+	}
+
+	> span + [class*="icon"],
+	> [class*="icon"] + span {
+		margin-left: rem(10px);
+	}
+}
+
+.a-link {
+	display: inline-block;
+
+	text-decoration: none;
+	font-weight: $font-weight-bold;
+
+	color: $text-color;
+
+	> [class*="icon"] {
+		font-size: $icon-size;
+	}
+
+	&:hover,
+	&:active {
+		text-decoration: underline;
+
+		color: inherit;
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: LINK MODIFIERS
+// -------------------------------------------------------------------
+
+.a-link.a-link--white {
+	color: $white;
+
+	[class*="icon"] {
+		color: $white;
+	}
+}
+
+.a-link.a-link--gray [class*="icon"] {
+	color: $text-color-xlight;
+}

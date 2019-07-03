@@ -1,0 +1,35 @@
+<header class="o-header">
+	<div class="o-header__action-bar">
+		<div class="o-header__inner">
+			<ul class="a-list-inline a-list-inline--separated a-list--white">
+				<li>
+					<a href="#" class="u-link-inverted">Nieuwe activiteit aanmaken</a>
+				</li>
+
+				<li>
+					<a href="#" class="u-link-inverted">Uitloggen</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="o-header__inner">
+		<div class="o-header__bar">
+			<a href="#" class="o-header__logo">
+				{% include "partials/logo.njk" %}
+			</a>
+
+			<div class="o-header__navigation u-hidden-xs u-hidden-sm u-hidden-md">
+				{% include "partials/navigation.njk" %}
+			</div>
+
+			<div class="o-header__actions u-hidden-lg u-hidden-xl">
+				{% include "partials/hamburger.njk" %}
+			</div>
+		</div>
+
+		<div class="o-header__menu js-menu-flyout u-hidden-lg u-hidden-xl">
+			{% include "partials/menu.njk" %}
+		</div>
+	</div>
+</header>

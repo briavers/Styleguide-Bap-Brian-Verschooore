@@ -1,0 +1,181 @@
+// -------------------------------------------------------------------
+// :: SLIDER NOUISLIDER
+// -------------------------------------------------------------------
+
+// nouislider - 11.1.0 - 2018-04-02 11:18:13 */
+// Functional styling;
+// These styles are required for noUiSlider to function.
+// You don't need to change these rules to apply your design.
+
+.noUi-target,
+.noUi-target * {
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: $black;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+.noUi-target {
+	position: relative;
+	direction: ltr;
+}
+
+.noUi-base,
+.noUi-connects {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.noUi-connects {
+	overflow: hidden;
+	z-index: 0;
+}
+
+.noUi-connect,
+.noUi-origin {
+	will-change: transform;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform-origin: 0 0;
+}
+
+html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
+	left: auto;
+	right: 0;
+}
+
+.noUi-horizontal .noUi-origin {
+	height: 0;
+}
+
+.noUi-handle {
+	position: absolute;
+}
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+	transition: transform 0.3s;
+}
+
+.noUi-state-drag * {
+	cursor: inherit !important;
+}
+
+.noUi-horizontal {
+	height: rem(6px);
+
+	border-radius: 3px;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: $spacer;
+	height: $spacer;
+
+	top: -7px;
+}
+
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+	right: $spacer / -2;
+	left: auto;
+}
+
+.noUi-target {
+	background-color: $gray;
+}
+
+.noUi-connects {
+	border-radius: 3px;
+}
+
+.noUi-connect {
+	background-color: $blue-dark;
+}
+
+.noUi-handle {
+	width: $spacer;
+	height: $spacer;
+
+	background-color: $blue-dark;
+	border-radius: $spacer / 2;
+	outline: none;
+
+	cursor: pointer;
+}
+
+
+// -------------------------------------------------------------------
+// :: SLIDER
+// -------------------------------------------------------------------
+
+.a-slider {
+	padding: rem(25px) rem(30px) rem(35px);
+
+	@include between($screen-sm, $screen-lg) {
+		padding: rem(25px) rem(20px) rem(25px);
+	}
+
+	.a-info {
+		margin-left: rem(10px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: SLIDER ELEMENTS
+// -------------------------------------------------------------------
+
+.a-slider__range {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: rem(25px);
+
+	span + span {
+		margin-left: rem(20px);
+
+		@include between($screen-sm, $screen-lg) {
+			margin-left: rem(15px);
+		}
+	}
+}
+
+.a-slider__value {
+	display: block;
+
+	min-width: rem(45px);
+	height: rem(25px);
+
+	padding: 0 $spacer / 4;
+
+	font-style: italic;
+	text-align: center;
+	line-height: rem(25px);
+
+	color: $text-color-light;
+	background-color: $background-color;
+}
+
+.a-slider__slider {
+	width: 100%;
+}
+
+
+// -------------------------------------------------------------------
+// :: SLIDER MODIFIERS
+// -------------------------------------------------------------------
+
+.a-slider.has-info .a-slider__range {
+	margin-left: rem(30px);
+
+	@include between($screen-sm, $screen-md) {
+		margin-left: 0;
+	}
+}

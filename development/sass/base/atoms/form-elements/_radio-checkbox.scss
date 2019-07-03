@@ -1,0 +1,280 @@
+// -------------------------------------------------------------------
+// :: RADIO & CHECKBOX
+// -------------------------------------------------------------------
+
+.a-input {
+
+	.a-input__checkbox:not(.a-input__checkbox--boxed),
+	.a-input__radio:not(.a-input__radio--boxed) {
+		display: block;
+
+		&:not(:last-child) {
+			margin-bottom: rem(20px);
+		}
+	}
+}
+
+.a-input__checkbox,
+.a-input__radio {
+	display: block;
+	position: relative;
+
+	padding-left: rem(20px);
+
+	input {
+		position: absolute;
+
+		padding: 0;
+
+		line-height: normal;
+
+		opacity: 0;
+		cursor: pointer;
+
+		&:disabled + label {
+			color: $state-disabled;
+
+			cursor: not-allowed;
+
+			&:after {
+				box-shadow: inset 0 0 0 $border-width $state-disabled;
+			}
+		}
+	}
+
+	label {
+		display: inline-block;
+		position: relative;
+
+		max-width: 100%;
+		min-height: rem(20px);
+
+		padding-left: rem(10px);
+
+		line-height: rem(24px);
+		vertical-align: middle;
+
+		cursor: pointer;
+
+		&:after {
+			content: "";
+
+			display: inline-block;
+
+			position: absolute;
+			top: rem(2px);
+			left: 0;
+
+			height: rem(20px);
+			width: rem(20px);
+
+			margin-left: rem(-20px);
+
+			background-color: $white;
+			box-shadow: inset 0 0 0 $border-width $border-color;
+
+			transition-duration: $animation-duration;
+			transition-property: background, box-shadow;
+			transition-timing-function: $animation-easing;
+		}
+
+		&:before {
+			display: inline-block;
+			position: absolute;
+
+			margin-left: rem(-20px);
+
+			transition: opacity $animation-normal;
+
+			opacity: 0;
+			z-index: layer("base");
+		}
+	}
+
+	.a-input__description {
+		padding-left: rem(10px);
+	}
+}
+
+.a-input__checkbox input[type="checkbox"],
+.a-input__radio input[type="radio"] {
+
+	&:checked + label {
+
+		&:before {
+			opacity: 1;
+		}
+
+		&:after {
+			box-shadow: inset 0 0 0 $border-width $primary-color;
+		}
+	}
+}
+
+.a-input__checkbox input[type="checkbox"]:checked + label:after {
+	background-color: $primary-color;
+}
+
+.a-input__checkbox label {
+	@extend .icon-checkmark; // sass-lint:disable-line placeholder-in-extend
+
+	&:before {
+		top: rem(4px);
+		left: 0;
+
+		width: rem(20px);
+		height: rem(20px);
+
+		font-size: rem($font-size);
+		text-align: center;
+
+		color: $white;
+	}
+}
+
+.a-input__radio label {
+
+	&:before {
+		content: "";
+
+		display: block;
+
+		left: rem(5px);
+		top: rem(7px);
+
+		height: rem(10px);
+		width: rem(10px);
+
+		background-color: $primary-color;
+	}
+
+	&:before,
+	&:after {
+		border-radius: 50%;
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: RADIO & CHECKBOX MODIFIERS
+// -------------------------------------------------------------------
+
+.a-input {
+
+	.a-input__checkbox.a-input__checkbox--sm:not(.a-input__checkbox--boxed),
+	.a-input__radio.a-input__radio--sm:not(.a-input__radio--boxed) {
+		display: block;
+
+		&:not(:last-child) {
+			margin-bottom: rem(10px);
+
+			@include at($screen-xs) {
+				margin-bottom: rem(20px);
+			}
+		}
+	}
+}
+
+.a-input__checkbox.a-input__checkbox--sm,
+.a-input__radio.a-input__radio--sm {
+	padding-left: rem(15px);
+
+	label {
+		line-height: rem(19px);
+
+		&:after {
+			height: rem(15px);
+			width: rem(15px);
+
+			margin-left: rem(-15px);
+		}
+
+		&:before {
+			margin-left: rem(-15px);
+		}
+	}
+}
+
+.a-input__checkbox.a-input__checkbox--sm label {
+
+	&:before {
+		width: rem(15px);
+		height: rem(15px);
+
+		font-size: rem($font-size-xs);
+	}
+}
+
+
+.a-input {
+
+	.a-input__checkbox.a-input__checkbox--boxed,
+	.a-input__radio.a-input__radio--boxed {
+		padding-top: $spacer / 2;
+		padding-bottom: $spacer / 2;
+
+		&:not(:last-child) {
+			border-bottom: $border-light;
+		}
+
+		.a-input {
+
+			.a-input__checkbox.a-input__checkbox--boxed,
+			.a-input__radio.a-input__radio--boxed {
+
+				&:first-child {
+					margin-top: $spacer / 2;
+
+					border-top: $border-light;
+				}
+
+				&:last-child {
+					margin-bottom: $spacer / -2;
+				}
+			}
+		}
+	}
+}
+
+.a-input__radio.a-input__radio--sm label {
+
+	&:before {
+		height: rem(5px);
+		width: rem(5px);
+	}
+}
+
+.a-input__checkbox.a-input__checkbox--error,
+.a-input__radio.a-input__radio--error {
+
+	label:after {
+		border: $border-width solid $state-error;
+		box-shadow: inset 0 0 0 $border-width $white;
+	}
+}
+
+.a-input.a-input--inline {
+	@include clearfix;
+
+	.a-input__checkbox,
+	.a-input__radio {
+		float: left;
+
+		&:not(:last-child) {
+			margin-right: rem(20px);
+		}
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: RADIO & CHECKBOX EXTENTIONS
+// -------------------------------------------------------------------
+
+.a-input__checkbox,
+.a-input__radio {
+
+	.a-info {
+		margin-left: rem(5px);
+	}
+}

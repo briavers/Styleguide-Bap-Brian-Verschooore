@@ -1,0 +1,87 @@
+// -------------------------------------------------------------------
+// :: CALL TO ACTION
+// -------------------------------------------------------------------
+
+.m-call-to-action {
+	padding: rem(20px);
+
+	background-color: $white;
+	box-shadow: $box-shadow-lg;
+
+	@include at($screen-sm) {
+		padding: rem(30px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: CALL TO ACTION ELEMENTS
+// -------------------------------------------------------------------
+
+.m-call-to-action__title {
+	margin-bottom: rem(20px);
+}
+
+.m-call-to-action__text {
+	margin-bottom: rem(20px);
+
+	@include at($screen-sm) {
+		margin-bottom: rem(30px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: CALL TO ACTION MODIFIERS
+// -------------------------------------------------------------------
+
+.m-call-to-action.m-call-to-action--with-pattern {
+	overflow: hidden;
+	position: relative;
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		top: rem(-1000px);
+		right: rem(-1000px);
+		bottom: rem(-1000px);
+		left: rem(-1000px);
+
+		background-image: url("../img/patterns/pattern-gray.svg");
+
+		transform: rotate(-315deg);
+	}
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background-image: linear-gradient(-75deg, $white 59%, transparent 0);
+
+		z-index: layer("auto");
+	}
+
+	.m-call-to-action__inner {
+		position: relative;
+
+		z-index: layer("base");
+	}
+}
+
+.m-call-to-action.m-call-to-action--centered {
+	text-align: center;
+
+	.m-call-to-action__title,
+	.m-call-to-action__text {
+		max-width: rem(350px);
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

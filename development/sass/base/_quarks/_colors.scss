@@ -1,0 +1,85 @@
+// -------------------------------------------------------------------
+// :: COLORS
+// -------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------
+// :: PRIMARY COLORS
+// -------------------------------------------------------------------
+
+$green-dark:              #499b68;
+$green:                   #4ece4e;
+$red-dark:                #e2182d;
+$red:                     #CB0934;
+$blue-dark:               #1E2951;
+$blue:                    #2E3D74;
+$blue-light:              #41559F;
+
+$black:                   #0C1122;
+$gray-xdark:              #6D707A;
+$gray-dark:               #999BA2;
+$gray:                    #CECFD3;
+$gray-light:              #E7E7E9;
+$gray-xlight:             #F6F7F8;
+$gray-xxlight:            #FAFAFB;
+$white:                   #FFFFFF;
+
+
+// -------------------------------------------------------------------
+// :: CONTEXTUAL COLORS
+// -------------------------------------------------------------------
+
+$primary-color:           $green;
+$primary-color-dark:      $green-dark;
+
+$secondary-color:         $red;
+$secondary-color-dark:    $red-dark;
+
+
+// -------------------------------------------------------------------
+// :: TEXT COLORS
+// -------------------------------------------------------------------
+
+$text-color:              $black;
+$text-color-light:        $gray-dark;
+$text-color-xlight:       $gray;
+
+
+// -------------------------------------------------------------------
+// :: BACKGROUND COLORS
+// -------------------------------------------------------------------
+
+$background-color-light:  $gray-xxlight;
+$background-color:        $gray-xlight;
+$background-gradient:     linear-gradient(135deg, $green 0%, $green-dark 100%);
+
+
+// -------------------------------------------------------------------
+// :: BORDER COLORS
+// -------------------------------------------------------------------
+
+$border-color-light:      $gray-xlight;
+$border-color:            $gray-light;
+$border-color-dark:       $gray;
+$border-color-xdark:      $gray-dark;
+$border-color-active:     $primary-color;
+
+
+// -------------------------------------------------------------------
+// :: OVERLAY COLORS
+// -------------------------------------------------------------------
+
+$overlay-color:            rgba($black, 0.7);
+$overlay-color-light:      rgba($black, 0.35);
+$overlay-color-xlight:     rgba($black, 0.1);
+
+
+// -------------------------------------------------------------------
+// :: FEEDBACK COLORS
+// -------------------------------------------------------------------
+
+$state-error:             #CE244B;
+$state-warning:           #FCE7AC;
+$state-success:           #4DC611;
+$state-info:              $blue-dark;
+$state-disabled:          $gray-light;

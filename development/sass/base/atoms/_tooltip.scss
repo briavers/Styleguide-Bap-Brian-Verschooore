@@ -1,0 +1,32 @@
+// -------------------------------------------------------------------
+// :: TOOLTIP
+// -------------------------------------------------------------------
+
+.a-tooltip {
+	position: relative;
+
+	padding: rem(10px) rem(15px);
+
+	color: $white;
+	background-color: $primary-color;
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+
+		border-left: rem(10px) solid transparent;
+		border-right: rem(10px) solid transparent;
+		border-top: rem(10px) solid $primary-color;
+
+		transform: translate(-50%, 100%);
+	}
+
+	a {
+		@extend %u-text-break-all;
+
+		color: inherit;
+	}
+}

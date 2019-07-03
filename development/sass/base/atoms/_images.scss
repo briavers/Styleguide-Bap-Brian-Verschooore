@@ -1,0 +1,62 @@
+// -------------------------------------------------------------------
+// :: IMAGES
+// -------------------------------------------------------------------
+// Images are set out to be fluid by default
+// Inspired by the Inuit.css framework
+//
+// - https://github.com/csswizardry/inuit.css/blob/master/base/_images.scss
+// - http://demosthenes.info/blog/586/CSS-Fluid-Image-Techniques-for-Responsive-Site-Design
+// - http://www.stucox.com/blog/dont-squash-me-using-min-width-on-fluid-images
+
+img {
+	height: auto;
+	max-width: 100%;
+
+	outline: 0;
+	border: none;
+}
+
+img[width],
+img[height] {
+	vertical-align: top;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+
+// -------------------------------------------------------------------
+// :: CONTEXTUAL IMAGES
+// -------------------------------------------------------------------
+
+figure {
+	display: block;
+
+	margin: 0;
+
+	text-align: center;
+}
+
+figure img {
+	display: block;
+}
+
+
+// -------------------------------------------------------------------
+// :: IMAGE
+// -------------------------------------------------------------------
+
+.a-image {
+	text-align: center;
+
+	img {
+
+		@include to($screen-xs) {
+			max-width: calc(100% + #{$spacer * 2});
+
+			margin-left: -$spacer;
+			margin-right: -$spacer;
+		}
+	}
+}

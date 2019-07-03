@@ -1,0 +1,50 @@
+<h1 class="styleguide__title js-scroll-nav__sub-title">Colors</h1>
+<small>{{ sassPaths.quarks }}_colors.scss</small>
+
+<h4 class="styleguide__sub-title">Primary colors</h4>
+<p class="styleguide__p">
+	Always provide different shades of the primary colors. For a more high-level approach on color use,
+	head over to <a href="http://www.ibm.com/design/language/framework/visual/color.shtml" title="IBM Design Language" target="_blank">IBM Design Language</a>.
+</p>
+
+<ul class="styleguide__list styleguide__colors">
+	{% for name, color  in COLORS.COLORS %}
+		<li style="background: {{ color.value }}"><small><strong>${{ name }}</strong><br />{{ color.raw }}</small></li>
+	{% endfor %}
+</ul>
+
+<h4 class="styleguide__sub-title">Border colors</h4>
+<ul class="styleguide__list styleguide__colors">
+	{% for name, color  in COLORS.BORDER_COLORS %}
+		<li style="background-color: {{ color.value }}"><small><strong>${{ name }}</strong><br />{{ color.raw }}</small></li>
+	{% endfor %}
+</ul>
+
+<h4 class="styleguide__sub-title">Text colors</h4>
+<p class="styleguide__p">
+	Use different shades for text to express the hierarchy of information.
+	Text, icons, borders and dividers will benefit when their color is defined
+	with alpha values, as a result they will work on any background. Text colors
+	are derived from primary black/white colors.
+</p>
+
+<ul class="styleguide__list styleguide__colors">
+	{% for name, color  in COLORS.FONT_COLORS %}
+		<li style="background-color: {{ color.value }}"><small><strong>${{ name }}</strong><br />{{ color.raw }}</small></li>
+	{% endfor %}
+</ul>
+
+
+<h4 class="styleguide__sub-title">Feedback colors</h4>
+<p class="styleguide__p">
+	Primary colors for interaction feedback, notifications and states:
+	error (red), warning (orange), highlight (yellow), success (green)
+	and information (blue). UI-kit colors should always be aligned
+	with the tone of voice of the application/brand.
+</p>
+
+<ul class="styleguide__list styleguide__colors">
+	{% for name, color  in COLORS.UI_COLORS %}
+		<li style="background-color: {{ color.value }}"><small><strong>${{ name }}</strong><br />{{ color.raw }}</small></li>
+	{% endfor %}
+</ul>

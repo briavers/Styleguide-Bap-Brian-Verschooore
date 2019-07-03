@@ -1,0 +1,57 @@
+<!-- APPLICATION/SITE SCRIPTS ////////////////////////////////////
+Using 'gulp-usemin' to concatenate Javascript files in production
+-->
+
+<!-- 3RD PARTY SCRIPTS ///////////////////////////////////////////
+	In some cases it's better to host 3rd party libraries (like jQuery)
+	on a CDN, providing we have a local fallback in place
+	-->
+
+{# jQuery #}
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+{# Utils #}
+<script src="{{ htmlParams.rootPath }}js/utils/requestAnimationFrame.js"></script>
+
+{# Vendor #}
+<script src="{{ htmlParams.rootPath }}js/vendor/chosen.min.js"></script>
+<script src="{{ htmlParams.rootPath }}js/vendor/nouislider.min.js"></script>
+<script src="{{ htmlParams.rootPath }}js/vendor/slick.min.js"></script>
+
+{# UI Components #}
+<script src="{{ htmlParams.rootPath }}js/components/accordion-toggle.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/accordion.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/autocomplete.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/carousel.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/filters-toggle.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/menu.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/slider.js"></script>
+<script src="{{ htmlParams.rootPath }}js/components/upload.js"></script>
+<script src="{{ htmlParams.rootPath }}js/main.js"></script>
+
+{% if htmlParams.isStyleguide %}
+	<script src="{{ htmlParams.rootPath }}js/vendor/jquery.scrollNav.js"></script>
+	<script src="{{ htmlParams.rootPath }}js/styleguide.js"></script>
+{% endif %}
+
+
+<!-- GOOGLE ANALYTICS ////////////////////////////////////////////
+- https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
+- http://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics
+- https://developers.google.com/analytics/devguides/collection/gajs/?hl=nl
+
+Async Google Analytics - change UA-XXXXX-X to your site ID
+<script>
+	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	e.src='//www.google-analytics.com/analytics.js';
+	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+-->
+
+</body>
+</html>

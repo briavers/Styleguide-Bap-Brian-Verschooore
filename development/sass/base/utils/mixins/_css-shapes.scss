@@ -1,0 +1,53 @@
+// -------------------------------------------------------------------
+// :: CSS SHAPES
+// -------------------------------------------------------------------
+// Shorthand methods for creating CSS shapes. Shapes may looked blurry
+// on hdpi screens when hardware acceleration is being applied.
+//
+// Inspired by:
+// - https://css-tricks.com/examples/ShapesOfCSS
+
+
+// -------------------------------------------------------------------
+// :: TRIANGLE
+// -------------------------------------------------------------------
+// .css-triangle {
+//		@include css-triangle("up", 20px, #F00);
+//		@include css-triangle("right", 2em, #F00, true);
+// }
+
+@mixin css-triangle($_direction, $_size, $_color: null, $_eq: false) {
+	content: '';
+
+	// Set triangle base for regular and equilateral triangles
+	$_eq-size: $_size;
+
+	@if $_eq {
+		$_eq-size: $_size * 2 * 0.866;
+	}
+
+	// Set triangle directions and base styles
+	@if $_direction == "up" {
+		border-left: $_size solid transparent !important;
+		border-right: $_size solid transparent  !important;
+		border-bottom: $_eq-size solid $_color;
+	}
+
+	@if $_direction == "down" {
+		border-left: $_size solid transparent !important;
+		border-right: $_size solid transparent !important;
+		border-top: $_eq-size solid $_color;
+	}
+
+	@if $_direction == "left" {
+		border-top: $_size solid transparent !important;
+		border-bottom: $_size solid transparent !important;
+		border-right: $_eq-size solid $_color;
+	}
+
+	@if $_direction == "right" {
+		border-top: $_size solid transparent !important;
+		border-bottom: $_size solid transparent !important;
+		border-left: $_eq-size solid $_color;
+	}
+}

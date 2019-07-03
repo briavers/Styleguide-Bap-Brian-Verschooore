@@ -1,0 +1,112 @@
+// -------------------------------------------------------------------
+// :: LOADER
+// -------------------------------------------------------------------
+
+.a-loader {
+	display: inline-block;
+}
+
+// -------------------------------------------------------------------
+// :: LOADER ANIMATIONS
+// -------------------------------------------------------------------
+
+@keyframes loader-animation-1 {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes loader-animation-3 {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes loader-animation-2 {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(19px, 0);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: LOADER ELEMENTS
+// -------------------------------------------------------------------
+
+.a-loader__spinner {
+	position: relative;
+
+	width: 64px;
+	height: 64px;
+
+	div {
+		position: absolute;
+		top: 27px;
+
+		width: 11px;
+		height: 11px;
+
+		background-color: $gray-light;
+		border-radius: 50%;
+
+		animation-timing-function: cubic-bezier(0, 1, 1, 0);
+
+		&:nth-child(1) {
+			left: 6px;
+
+			animation: loader-animation-1 0.6s infinite;
+		}
+
+		&:nth-child(2) {
+			left: 6px;
+
+			animation: loader-animation-2 0.6s infinite;
+		}
+
+		&:nth-child(3) {
+			left: 26px;
+
+			animation: loader-animation-2 0.6s infinite;
+		}
+
+		&:nth-child(4) {
+			left: 45px;
+
+			animation: loader-animation-3 0.6s infinite;
+		}
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: LOADER ELEMENTS
+// -------------------------------------------------------------------
+
+.a-loader--with-spacing {
+	padding: rem(40px) 0;
+
+	@include at($screen-sm) {
+		padding: rem(70px) 0;
+	}
+}
+
+.a-loader--centered {
+	display: flex;
+	justify-content: center;
+}
+
+.a-loader--dark .a-loader__spinner div {
+	background-color: $gray;
+}

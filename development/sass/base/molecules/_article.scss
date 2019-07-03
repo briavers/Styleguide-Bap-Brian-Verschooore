@@ -1,0 +1,48 @@
+// -------------------------------------------------------------------
+// :: ARTICLE
+// -------------------------------------------------------------------
+
+.m-article {
+
+	> h1,
+	> h2,
+	> h3,
+	> h4,
+	> h5,
+	> h6 {
+
+		+ * {
+			margin-top: rem(20px);
+		}
+	}
+
+	> p + * ,
+	> a:not(.a-link, .a-label, .a-button) + * ,
+	> ul + * {
+		margin-top: rem(20px);
+
+		@include at($screen-sm) {
+			margin-top: rem(30px);
+		}
+	}
+
+	> img + *,
+	> div + *,
+	> table + *,
+	> .a-button + * {
+		margin-top: rem(20px);
+
+		@include at($screen-sm) {
+			margin-top: rem(40px);
+		}
+	}
+
+	a:not(.a-link, .a-label, .a-button) {
+		color: $primary-color;
+
+		&:hover,
+		&:active {
+			color: mix($primary-color, $black, 85%);
+		}
+	}
+}

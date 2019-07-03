@@ -1,0 +1,22 @@
+// sass-lint:disable no-color-literals
+// -------------------------------------------------------------------
+// :: MEDIA QUERIES
+// -------------------------------------------------------------------
+
+@mixin at($_min-width) {
+	@media screen and (min-width: $_min-width) {
+		@content;
+	}
+}
+
+@mixin to($_max-width) {
+	@media screen and (max-width: $_max-width) {
+		@content;
+	}
+}
+
+@mixin between($_min-width, $_max-width) {
+	@media screen and (min-width: $_min-width) and (max-width: $_max-width) {
+		@content;
+	}
+}

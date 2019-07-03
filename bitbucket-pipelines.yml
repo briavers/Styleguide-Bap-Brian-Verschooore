@@ -1,0 +1,18 @@
+# Only use spaces to indent your .yml configuration.
+clone:
+  depth: 1
+
+pipelines:
+  default:
+    - step:
+        script: # Lint all commits
+          - npm install sass-lint
+          - npm test
+  branches:
+    master:
+      - step:
+          script: # Deploy to demo.lmr.com
+            - npm install
+            - npm run postinstall
+            - npm run distribute
+            - npm run deploy-demo

@@ -1,0 +1,69 @@
+// -------------------------------------------------------------------
+// :: BLOCK
+// -------------------------------------------------------------------
+
+.m-block {
+	@extend %u-link-unstyled;
+
+	overflow: hidden;
+	display: block;
+
+	padding: rem(25px) rem(15px);
+
+	color: $text-color;
+	background-color: $white;
+	box-shadow: $box-shadow-lg;
+
+	transition-duration: $animation-duration;
+	transition-property: color, background-color;
+	transition-timing-function: $animation-easing;
+
+	@include at($screen-xs) {
+		padding: rem(30px) rem(20px);
+	}
+
+	@include at($screen-sm) {
+		min-height: rem(200px);
+
+		padding: rem(30px) rem(30px) rem(40px);
+
+		text-align: left;
+	}
+
+	&.is-active,
+	&:hover,
+	&:focus {
+		color: $white;
+		background-color: $primary-color;
+
+		.m-block__link {
+			color: $white;
+		}
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: BLOCK ELEMENTS
+// -------------------------------------------------------------------
+
+.m-block__title {
+	hyphens: auto;
+	word-break: break-word;
+}
+
+.m-block__text {
+	margin-top: rem(15px);
+
+	@include at($screen-sm) {
+		margin-top: rem(10px);
+	}
+}
+
+.m-block__link {
+	margin-top: rem(20px);
+
+	@include at($screen-sm) {
+		margin-top: rem(25px);
+	}
+}

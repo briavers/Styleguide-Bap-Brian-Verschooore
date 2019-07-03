@@ -1,0 +1,111 @@
+// -------------------------------------------------------------------
+// :: ALERTS
+// -------------------------------------------------------------------
+
+.a-alert {
+	position: relative;
+
+	color: $text-color;
+	background-color: $background-color;
+	border: $border;
+	border-radius: $border-radius;
+
+	.a-alert__button {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		@include at($screen-sm) {
+			top: 50%;
+
+			transform: translateY(-50%);
+		}
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: ALERTS ELEMENTS
+// -------------------------------------------------------------------
+
+.a-alert__inner {
+	padding-top: rem(10px);
+	padding-bottom: rem(10px);
+
+	p {
+		font-weight: $font-weight-medium;
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: ALERTS MODIFIERS
+// -------------------------------------------------------------------
+
+.a-alert.a-alert--info {
+	color: $white;
+	background-color: $state-info;
+	border: none;
+
+	a {
+		color: mix($state-info, $white, 60%);
+
+		&:hover,
+		&:active {
+			color: mix($state-info, $white, 40%);
+		}
+	}
+}
+
+.a-alert.a-alert--success {
+	color: $white;
+	background-color: $state-success;
+	border: none;
+
+	a {
+		color: mix($state-success, $black, 60%);
+
+		&:hover,
+		&:active {
+			color: mix($state-success, $black, 40%);
+		}
+	}
+}
+
+.a-alert.a-alert--error {
+	color: $white;
+	background-color: $state-error;
+	border: none;
+
+	a {
+		color: mix($state-error, $black, 60%);
+
+		&:hover,
+		&:active {
+			color: mix($state-error, $black, 40%);
+		}
+	}
+}
+
+.a-alert.a-alert--transparent {
+
+	&.a-alert--info {
+		background-color: rgba($state-info, 0.85);
+	}
+
+	&.a-alert--success {
+		background-color: rgba($state-success, 0.85);
+	}
+
+	&.a-alert--error {
+		background-color: rgba($state-error, 0.85);
+	}
+}
+
+.a-alert.has-button .a-alert__inner {
+	padding-right: rem(60px);
+}
+
+.a-alert.a-alert--higher {
+	z-index: layer("base");
+}

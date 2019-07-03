@@ -1,0 +1,154 @@
+// -------------------------------------------------------------------
+// :: CAROUSEL
+// -------------------------------------------------------------------
+
+.m-carousel {
+
+	.slick-slide {
+		text-align: center;
+	}
+
+	.slick-slide img {
+		display: inline-block;
+
+		width: auto;
+		max-width: 100%;
+		height: 100%;
+	}
+}
+
+.m-carousel__image {
+	overflow: hidden;
+	position: relative;
+
+	height: 0;
+
+	padding-top: 563px / 1000px * 100%;
+
+	background-color: $black;
+}
+
+.m-carousel__image__inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+
+// -------------------------------------------------------------------
+// :: CAROUSEL NAVIGATION
+// -------------------------------------------------------------------
+
+.m-carousel-navigation {
+	width: calc(100% + #{rem(12px)});
+
+	margin-top: rem(12px);
+	margin-right: rem(-12px);
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: rem(12px);
+		height: 100%;
+
+		background-color: $white;
+	}
+
+	.slick-slide {
+		position: relative;
+
+		margin-right: rem(12px);
+
+		&:after {
+			content: "";
+
+			display: block;
+
+			margin-top: 100%;
+		}
+	}
+}
+
+// -------------------------------------------------------------------
+// :: CAROUSEL ELEMENTS
+// -------------------------------------------------------------------
+
+.m-carousel-navigation__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	transition: box-shadow $animation-normal;
+
+	cursor: pointer;
+}
+
+.m-carousel-navigation .slick-slide:not(.slick-current) {
+
+	&:before {
+		content: "";
+
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: $blue-light;
+		opacity: 0.6;
+
+		transition: background-color $animation-normal;
+
+		z-index: 3;
+	}
+
+	&:hover:before {
+		background-color: transparent;
+	}
+}
+
+.m-carousel__next,
+.m-carousel__prev {
+	position: absolute;
+	top: 50%;
+
+	transform: translateY(-50%);
+
+	z-index: layer("base");
+
+	cursor: pointer;
+}
+
+.m-carousel__next {
+	right: rem(20px);
+}
+
+.m-carousel__prev {
+	left: rem(20px);
+}
+
+
+// -------------------------------------------------------------------
+// :: CAROUSEL MODIFIERS
+// -------------------------------------------------------------------
+
+// Fix Slick.js bug when amount of images is less than the configured number of slidesToShow
+.m-carousel-navigation.is-locked .slick-list > .slick-track {
+	transform: translate3d(0, 0, 0) !important;
+}

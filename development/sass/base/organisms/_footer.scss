@@ -1,0 +1,96 @@
+// -------------------------------------------------------------------
+// :: FOOTER
+// -------------------------------------------------------------------
+
+.o-footer {
+	overflow: hidden;
+	position: relative;
+
+	padding: rem(20px) 0;
+
+	background-color: $blue-dark;
+
+	@include at($screen-sm) {
+		padding: rem(50px) 0;
+	}
+
+	@include at($screen-md) {
+		padding: rem(70px) 0;
+	}
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		top: rem(-1000px);
+		right: rem(-1000px);
+		bottom: rem(-1000px);
+		left: rem(-1000px);
+
+		background-image: url("../img/patterns/pattern-gray.svg");
+
+		transform: rotate(-315deg);
+
+		opacity: 0.05;
+	}
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background-image: linear-gradient(-75deg, transparent 40%, $blue-dark 0);
+
+		z-index: layer("auto");
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: FOOTER ELEMENTS
+// -------------------------------------------------------------------
+
+.o-footer__inner {
+	color: $white;
+
+	z-index: layer("base");
+
+	a {
+		word-wrap: break-word;
+
+		color: inherit;
+	}
+}
+
+.o-footer__title {
+	margin-bottom: rem(5px);
+
+	@include at($screen-sm) {
+		margin-bottom: rem(20px);
+	}
+}
+
+.o-footer__column {
+	display: flex;
+	justify-content: space-between;
+
+	@include at($screen-sm) {
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	p {
+		max-width: rem(223px);
+	}
+
+	.a-logo-antwerp {
+
+		@include to($screen-sm) {
+			margin-left: rem(30px);
+		}
+	}
+}

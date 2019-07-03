@@ -1,0 +1,115 @@
+// -------------------------------------------------------------------
+// :: LAYOUT HELPERS
+// -------------------------------------------------------------------
+// To provide screen readers an optimal experience
+// add hidden DOM-elements with additional info
+//
+// - http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont
+
+
+// -------------------------------------------------------------------
+// :: LAYOUT SCROLLING
+// -------------------------------------------------------------------
+
+.u-scrollable {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.u-no-scroll {
+	overflow: hidden;
+	position: fixed;
+}
+
+.u-no-scroll--sm {
+
+	@include at($screen-sm) {
+		overflow: visible;
+		position: static;
+	}
+}
+
+.u-no-scroll--md {
+
+	@include at($screen-md) {
+		overflow: visible;
+		position: static;
+	}
+}
+
+.u-no-overflow {
+	overflow: hidden;
+}
+
+.u-overflow {
+	overflow: initial;
+}
+
+
+// -------------------------------------------------------------------
+// :: LAYOUT CLEARANCE
+// -------------------------------------------------------------------
+
+%u-clearfix {
+	@include clearfix;
+}
+
+.u-clearfix {
+	@extend %u-clearfix;
+}
+
+
+// -------------------------------------------------------------------
+// :: GLOBAL CONTAINERS & WRAPPERS
+// -------------------------------------------------------------------
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.u-wrapper {
+	overflow: hidden;
+}
+
+.u-wrapper,
+.u-main {
+	flex: 1 0 auto;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+
+.u-container {
+	@include clearfix;
+
+	position: relative;
+
+	width: 100%;
+	max-width: $screen-lg;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 rem(20px);
+
+	&.u-container--md {
+		max-width: $screen-md;
+	}
+
+	&.u-container--sm {
+		max-width: rem(896px);
+	}
+
+	&.u-container--xs {
+		max-width: rem(820px);
+	}
+}

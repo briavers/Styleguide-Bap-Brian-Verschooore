@@ -1,0 +1,117 @@
+// -------------------------------------------------------------------
+// :: VISIBILITY HELPERS
+// -------------------------------------------------------------------
+
+.u-hidden {
+	display: none;
+}
+
+@media screen and (max-width: $screen-xs-min) {
+	.u-visible-sm {
+		display: none !important;
+	}
+
+	.u-visible-md {
+		display: none !important;
+	}
+
+	.u-visible-lg {
+		display: none !important;
+	}
+
+	.u-visible-xl {
+		display: none !important;
+	}
+
+	.u-hidden-xs {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: $screen-xs-max) and (max-width: $screen-sm-min) {
+	.u-visible-xs {
+		display: none !important;
+	}
+
+	.u-visible-md {
+		display: none !important;
+	}
+
+	.u-visible-lg {
+		display: none !important;
+	}
+
+	.u-visible-xl {
+		display: none !important;
+	}
+
+	.u-hidden-sm {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: $screen-sm-max) and (max-width: $screen-md-min) {
+	.u-visible-xs {
+		display: none !important;
+	}
+
+	.u-visible-sm {
+		display: none !important;
+	}
+
+	.u-visible-lg {
+		display: none !important;
+	}
+
+	.u-visible-xl {
+		display: none !important;
+	}
+
+	.u-hidden-md {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: $screen-md-max) and (max-width: $screen-lg-min) {
+	.u-visible-xs {
+		display: none !important;
+	}
+
+	.u-visible-sm {
+		display: none !important;
+	}
+
+	.u-visible-md {
+		display: none !important;
+	}
+
+	.u-visible-xl {
+		display: none !important;
+	}
+
+	.u-hidden-lg {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: $screen-lg-max) {
+	.u-visible-xs {
+		display: none !important;
+	}
+
+	.u-visible-sm {
+		display: none !important;
+	}
+
+	.u-visible-md {
+		display: none !important;
+	}
+
+	.u-visible-lg {
+		display: none !important;
+	}
+
+	.u-hidden-xl {
+		display: none !important;
+	}
+}

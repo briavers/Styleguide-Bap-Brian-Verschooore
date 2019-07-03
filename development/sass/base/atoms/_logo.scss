@@ -1,0 +1,39 @@
+// -------------------------------------------------------------------
+// :: LOGO
+// -------------------------------------------------------------------
+
+.a-logo {
+	height: rem(116px);
+
+	@include at($screen-md) {
+		height: rem(149px);
+	}
+
+	@include at($screen-lg) {
+		height: rem(243px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: LOGO MODIFIERS
+// -------------------------------------------------------------------
+
+.a-logo.a-logo--sm {
+
+	@include at($screen-lg) {
+		height: rem(149px);
+	}
+}
+
+.a-logo-antwerp {
+	height: rem(62px);
+
+	@include at($screen-sm) {
+		height: rem(96px);
+	}
+
+	@include at($screen-md) {
+		height: rem(108px);
+	}
+}

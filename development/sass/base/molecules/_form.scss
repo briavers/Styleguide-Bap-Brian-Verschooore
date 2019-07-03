@@ -1,0 +1,143 @@
+// -------------------------------------------------------------------
+// :: FORM
+// -------------------------------------------------------------------
+
+.m-form__body .m-form__col {
+
+	&:not(:last-child) {
+
+		> * {
+			margin-bottom: rem(30px);
+		}
+	}
+
+	&:last-child .m-form__group:not(:last-child) {
+
+		> * {
+
+			@include to($screen-sm) {
+				margin-bottom: rem(30px);
+			}
+		}
+	}
+}
+
+.m-form__col {
+
+	@include at($screen-xs) {
+		display: flex;
+		flex-wrap: wrap;
+
+		width: calc(100% + #{rem(20px)});
+
+		margin-left: rem(-10px);
+	}
+}
+
+.m-form__group {
+	display: flex;
+
+	width: 100%;
+
+	> *:not([class*="a-button"]) {
+		width: 100%;
+	}
+
+	> [class*="a-button"] {
+
+		@include at($screen-xs) {
+			align-self: flex-start;
+		}
+
+		@include at($screen-sm) {
+			width: 100%;
+		}
+	}
+
+	@include at($screen-xs) {
+		margin: 0 rem(10px);
+	}
+}
+
+.m-form__header {
+	margin-bottom: rem(20px);
+
+	@include at($screen-sm) {
+		margin-bottom: rem(30px);
+	}
+}
+
+.m-form__footer {
+	display: flex;
+	justify-content: center;
+
+	margin-top: rem(30px);
+
+	[class*="a-button"]:not(:last-child) {
+		margin-right: $spacer;
+	}
+
+	@include at($screen-sm) {
+		margin-top: rem(70px);
+	}
+}
+
+.m-form__title {
+	font-weight: $font-weight-bold;
+}
+
+.m-form__subtitle {
+	margin-bottom: rem(5px);
+
+	color: $text-color-light;
+
+	@include at($screen-sm) {
+		margin-bottom: rem(10px);
+	}
+}
+
+.m-form__description {
+	margin-top: rem(5px);
+}
+
+.m-form__progress-bar {
+	margin-bottom: rem(40px);
+}
+
+
+// -------------------------------------------------------------------
+// :: FORM MODIFIERS
+// -------------------------------------------------------------------
+
+.m-form__group.m-form__group--full {
+	width: 100%;
+}
+
+.m-form__group.m-form__group--half {
+
+	@include at($screen-sm) {
+		width: calc((100% - 1px) / 2 - #{rem(20px)});
+	}
+}
+
+.m-form__group.m-form__group--third {
+
+	@include at($screen-sm) {
+		width: calc((100% - 1px) / 3 - #{rem(20px)});
+	}
+}
+
+.m-form__group.m-form__group--quarter {
+
+	@include at($screen-sm) {
+		width: calc((100% - 1px) / 4 - #{rem(20px)});
+	}
+}
+
+.m-form__footer.m-form__footer--right {
+	text-align: right;
+}
+
+.m-form__footer.m-form__footer--center {
+	text-align: center;
+}

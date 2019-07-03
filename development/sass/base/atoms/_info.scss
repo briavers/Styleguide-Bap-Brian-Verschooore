@@ -1,0 +1,36 @@
+// -------------------------------------------------------------------
+// :: INFO
+// -------------------------------------------------------------------
+
+.a-info {
+	display: inline-block;
+	position: relative;
+
+	&:hover .a-info__tooltip {
+		opacity: 1;
+		visibility: visible;
+
+		transition-delay: 0s;
+	}
+
+	.a-info__tooltip {
+		display: block;
+		position: absolute;
+		top: rem(-10px);
+		left: 50%;
+
+		width: rem(280px);
+
+		font-size: rem($font-size-sm);
+		line-height: rem($line-height-sm);
+
+		transform: translate(-50%, -100%);
+
+		opacity: 0;
+		visibility: hidden;
+
+		z-index: layer("base");
+
+		transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal;
+	}
+}

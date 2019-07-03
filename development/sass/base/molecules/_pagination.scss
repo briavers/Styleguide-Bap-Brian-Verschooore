@@ -1,0 +1,36 @@
+// -------------------------------------------------------------------
+// :: PAGINATION
+// -------------------------------------------------------------------
+
+.m-pagination {
+	@extend %u-list-unstyled;
+
+	display: inline-flex;
+
+	> li {
+
+		a {
+			@extend %u-link-inverted;
+
+			display: block;
+
+			width: rem(30px);
+			height: rem(30px);
+
+			text-align: center;
+			line-height: rem(30px);
+		}
+
+		&:not(.m-pagination__prev, .m-pagination__next) a {
+			color: $text-color;
+		}
+
+		&:not(:last-child) {
+			margin-right: rem(15px);
+		}
+
+		&.is-active {
+			font-weight: $font-weight-bold;
+		}
+	}
+}

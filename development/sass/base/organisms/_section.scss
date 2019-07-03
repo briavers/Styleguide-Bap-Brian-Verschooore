@@ -1,0 +1,159 @@
+// -------------------------------------------------------------------
+// :: SECTION
+// -------------------------------------------------------------------
+
+.o-section {
+	@include clearfix;
+
+	flex-grow: 1;
+
+	position: relative;
+
+	padding: rem(40px) 0;
+
+	@include at($screen-sm) {
+		padding: rem(65px) 0;
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: SECTION ELEMENTS
+// -------------------------------------------------------------------
+
+.o-section__header {
+	margin-bottom: rem(20px);
+
+	@include at($screen-xs) {
+		margin-bottom: rem(30px);
+	}
+
+	@include at($screen-sm) {
+		margin-bottom: rem(40px);
+	}
+}
+
+.o-section__footer {
+	margin-top: rem(20px);
+
+	text-align: center;
+
+	@include at($screen-xs) {
+		margin-top: rem(40px);
+	}
+
+	@include at($screen-sm) {
+		margin-top: rem(60px);
+	}
+}
+
+
+// -------------------------------------------------------------------
+// :: SECTION MODIFIERS
+// -------------------------------------------------------------------
+
+.o-section.o-section--xs {
+
+	@include at($screen-sm) {
+		padding: rem(40px) 0;
+	}
+}
+
+.o-section.o-section--sm {
+
+	@include at($screen-sm) {
+		padding: rem(50px) 0;
+	}
+}
+
+.o-section.o-section--lg {
+	padding: rem(40px) 0;
+
+	@include at($screen-sm) {
+		padding: rem(60px) 0;
+	}
+
+	@include at($screen-md) {
+		padding: rem(80px) 0;
+	}
+}
+
+.o-section.o-section--search {
+	@include to($screen-sm) {
+		padding-top: 0;
+	}
+}
+
+.o-section.o-section--content + .o-section.o-section--content {
+	padding-top: 0;
+
+	@include at($screen-sm) {
+		margin-top: rem(-30px);
+	}
+}
+
+.o-section.o-section--white {
+	background-color: $white;
+
+	+ .o-section.o-section--white,
+	+ .o-section.o-section--white-gray {
+		padding-top: 0;
+	}
+}
+
+.o-section.o-section--gray {
+	background-color: $background-color;
+
+	+ .o-section.o-section--gray,
+	+ .o-section.o-section--gray-white {
+		padding-top: 0;
+	}
+}
+
+.o-section.o-section--white-gray {
+	padding-bottom: 0;
+
+	background-image: linear-gradient(0deg, $background-color 50%, transparent 0);
+}
+
+.o-section.o-section--gray-white {
+	background-image: linear-gradient(0deg, $white 50%, $background-color 0);
+}
+
+.o-section.o-section--with-pattern {
+	position: relative;
+
+	&:before {
+		content: "";
+
+		position: absolute;
+		top: rem(-1000px);
+		right: rem(-1000px);
+		bottom: rem(-1000px);
+		left: rem(-1000px);
+
+		background-image: url("../img/patterns/pattern-gray.svg");
+
+		transform: rotate(-315deg);
+	}
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: rem(-200px);
+		left: 0;
+
+		background-image: linear-gradient(-140deg, transparent 35%, $white 0);
+
+		z-index: layer("auto");
+	}
+
+	.u-container {
+		position: relative;
+
+		z-index: layer("base");
+	}
+}
