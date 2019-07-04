@@ -1,0 +1,9 @@
+/node_modules
+/.sass-cache
+/built-styles
+/styleguide-dist
+/test/shots
+/test/shots_base
+static.json
+
+/**/*.DS_Store

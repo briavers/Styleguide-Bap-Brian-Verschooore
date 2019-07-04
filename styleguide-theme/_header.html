@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Acme Styleguide <%= title.length > 0 ? '|' : '' %> <%= title %></title>
+    <link rel="shortcut icon" href="static/favicon.ico" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="static/css/styleguide.css">
+    <link rel="stylesheet" href="static/css/doc.css">
+    <link rel="stylesheet" href="static/css/github.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS to be documented -->
+    <link rel="stylesheet" href="built-styles/css/style.css">
+
+</head>
+  <body class="<%= @blocks.length > 1 ? 'category-nav-showing' : '' %>">
+
+
+      <nav>
+          <div class="nav-wrapper">
+              <span class="brand-logo center">Digital Styleguide</span>
+              <a href="#" data-target="slide-out" class="sidenav-trigger left"><i class="material-icons">menu</i></a>
+          </div>
+      </nav>
+
+      <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <a href="picturesforanewbeginning.eu"><img class="" src="static/logo-ahs-icon.svg"></a>
+                <a href="picturesforanewbeginning.eu"><span class="black-text name">Brian Verschoore</span></a>
+                <a href="mailto:'briavers@student.arteveldehs.be'"><span class="black-text email">briavers@student.arteveldehs.be</span></a>
+            </div>
+        </li>
+        <li><a href="/quarks.html"><i class="material-icons">cloud</i>Quarks</a></li>
+        <li><a href="/atoms.html"><i class="material-icons">album</i>Atoms</a></li>
+        <li><a href="/atoms.html"><i class="material-icons">bubble_chart</i>Molecules</a></li>
+        <li><a href="/atoms.html"><i class="material-icons">view_comfy</i>Organisms</a></li>
+        <li><a href="/atoms.html"><i class="material-icons">photo_filter</i>Pages</a></li>
+    </ul>
+
+
+
+
+    <main class="styleguide-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <% if @blocks.length > 1 %>
+              <nav class="component-nav" data-gumshoe-header>
+                <ul class="list-inline m-a-0 p-x-3 nowrap overflow-x-auto" data-gumshoe>  
+                <% @blocks.each do |block| %>
+                  <% if block[:parent].nil? %>
+                  <li class="list-inline-item">
+                    <a class="p-y-3 p-x-2" href="#<%= block[:name] %>"><%= block[:title] %></a>
+                  </li>
+                  <% end %>
+                <% end %>
+                </ul>
+              </nav>
+            <% end %>
+
+            <div class="styleguide-inner">
