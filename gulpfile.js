@@ -10,8 +10,8 @@ var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
 
 var browser = os.platform() === 'linux' ? 'google-chrome' : (
-  os.platform() === 'darwin' ? 'google chrome' : (
-  os.platform() === 'win32' ? 'chrome' : 'firefox'));
+  os.platform() === 'darwin' ? 'firefox' : (
+  os.platform() === 'win32' ? 'firefox' : 'firefox'));
 
 gulp.task('hologram', shell.task([
   'hologram config.yml'
@@ -73,4 +73,4 @@ gulp.task('deploy', shell.task([
 ]));
 
 
-gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch' ])
+gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch' ]);
