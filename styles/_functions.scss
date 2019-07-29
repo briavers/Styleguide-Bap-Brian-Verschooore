@@ -1,0 +1,6 @@
+@function color-get($key, $opacity: 1, $lighten: 0, $map: $colors) {
+  $value: map-get($map, $key);
+  $value: rgba($value, $opacity);
+  $value: call(if($lighten >= 0, lighten, darken), $value, abs($lighten));
+  @return $value
+}

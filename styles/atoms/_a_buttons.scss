@@ -1,0 +1,27 @@
+/*doc
+---
+title: Buttons
+name: button
+category: atoms
+---
+```html_example
+
+  <div class="btn-group">
+    <button class="btn btn-primary">Save me!</button>
+  </div>
+
+```
+*/
+
+.btn {
+  font-weight: 500;
+}
+
+.btn-primary {
+
+  background-color: color-get( 'yellow' );
+
+  &:hover {
+    background-color: color-get( 'yellow' , 1, -10%);
+  }
+}

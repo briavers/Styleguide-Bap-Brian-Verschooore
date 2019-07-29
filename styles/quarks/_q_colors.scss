@@ -1,0 +1,206 @@
+/*doc
+---
+title: Colors
+name: color
+category: quarks
+---
+*/
+
+/*doc
+---
+title: Contrasts
+parent: color
+name: contrast
+category: quarks
+---
+
+<div class="row">
+  <div class="col s6 m4 l2">
+    <div class="card">
+      <div class="color-card bg-black ">
+      </div>
+      <div class="card-content">
+        <p>HEX: 000000</p>
+        <p>Class: black</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s6 m4 l2">
+    <div class="card">
+      <div class="color-card bg-darkgrey ">
+      </div>
+      <div class="card-content">
+        <p>HEX: 555555</p>
+        <p>Class: darkgrey</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s6 m4 l2">
+    <div class="card">
+      <div class="color-card bg-grey ">
+      </div>
+      <div class="card-content">
+        <p>HEX: BEBEBE</p>
+        <p>Class: grey</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s6 m4 l2">
+    <div class="card">
+      <div class="color-card bg-lightgrey ">
+      </div>
+      <div class="card-content">
+        <p>HEX: AAAAAA</p>
+        <p>Class: lightgrey</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s6 m4 l2">
+    <div class="card">
+      <div class="color-card bg-white ">
+      </div>
+      <div class="card-content">
+        <p>HEX: FFFFFF</p>
+        <p>Class: white</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+*/
+
+/*doc
+---
+title: Vibrants
+parent: color
+name: vibrant
+category: quarks
+---
+<div class="row">
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-yellow ">
+            </div>
+            <div class="card-content">
+                <p>HEX: F2DA5E</p>
+                <p>Class: yellow</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-lightblue ">
+            </div>
+            <div class="card-content">
+                <p>HEX: 07DBF2</p>
+                <p>Class: lightblue</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-blue ">
+            </div>
+            <div class="card-content">
+                <p>HEX: #0554F2</p>
+                <p>Class: blue</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-darkblue ">
+            </div>
+            <div class="card-content">
+                <p>HEX: #0540F2</p>
+                <p>Class: darkblue</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-brown ">
+            </div>
+            <div class="card-content">
+                <p>HEX: #73532C</p>
+                <p>Class: brown</p>
+            </div>
+        </div>
+    </div>
+</div>
+*/
+
+/*doc
+---
+title: Actions
+parent: color
+name: action
+category: quarks
+---
+<div class="row">
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-success ">
+            </div>
+            <div class="card-content">
+                <p>HEX: #9EEB46</p>
+                <p>Class: success</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-alert ">
+            </div>
+            <div class="card-content">
+                <p>HEX: #FFC107</p>
+                <p>Class: alert</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 m4 l2">
+        <div class="card">
+            <div class="color-card bg-info ">
+            </div>
+            <div class="card-content">
+                <p>HEX: #51AFE8</p>
+                <p>Class: info</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+*/
+
+/*doc
+---
+title: Text colors
+parent: color
+name: textColor
+category: quarks
+---
+<div class="row">
+    <div class="col s12">
+        <p class= " black">  black </p>
+        <p class =" darkgrey">  darkgrey </p>
+        <p class= " grey">  grey </p>
+        <p class= " lightgrey">  lightgrey </p>
+        <p class= " white">  white </p>
+        <p class= " transparent">  transparent </p>
+        <p class= " yellow">  yellow </p>
+        <p class= " lightblue">  lightblue </p>
+        <p class= " blue">  blue </p>
+        <p class= " darkblue">  darkblue </p>
+        <p class= " brown">  brown </p>
+    </div>
+</div>
+*/
+
+.color-card{
+  height: 150px;
+  width: 100%;
+}

@@ -1,0 +1,20 @@
+/*doc
+---
+title: Icons
+name: icon
+category: atoms
+---
+
+Icon (sm, md, lg, xl)                                                                                                                                                                                                     | Icon name
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------
+ <i class="material-icons  sm">delete\_forever</i>    <i class="material-icons md">delete\_forever</i>     <i class="material-icons lg">delete\_forever</i>    <i class="material-icons xl">delete\_forever</i>         | `delete_forever`
+ <i class="material-icons  sm">edit</i>               <i class="material-icons  md">edit</i>                <i class="material-icons  lg">edit</i>                <i class="material-icons  xl">edit</i>                  | `edit`
+ <i class="material-icons  sm">print</i>              <i class="material-icons  md">print</i>               <i class="material-icons  lg">print</i>               <i class="material-icons  xl">print</i>                 | `print`
+ <i class="material-icons  sm">arrow\_drop\_down</i>  <i class="material-icons  md">arrow\_drop\_down</i>   <i class="material-icons  lg">arrow\_drop\_down</i>   <i class="material-icons  xl">arrow\_drop\_down</i>     | `arrow_drop_down`
+
+*/
+
+.material-icons.sm { font-size: 18px; }
+.material-icons.md { font-size: 24px; }
+.material-icons.lg { font-size: 36px; }
+.material-icons.xl { font-size: 48px; }
