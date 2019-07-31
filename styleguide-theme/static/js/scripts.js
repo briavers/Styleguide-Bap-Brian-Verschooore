@@ -25,3 +25,7 @@ function fixComponentNavigation() {
 }
 
 window.addEventListener('scroll', fixComponentNavigation);
+
+$(document).ready(function(){
+	$('select').formSelect();
+});

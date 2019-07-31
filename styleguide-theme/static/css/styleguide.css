@@ -8,10 +8,9 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 100px;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   body {
     padding: 0;
   }
@@ -31,7 +30,7 @@ body {
   z-index: 9999;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   .side-nav {
     height: 100%;
     overflow: auto;
@@ -53,7 +52,7 @@ body {
   padding: 25px;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   .styleguide-content {
     margin-left: 275px;
     padding: 25px 50px;
@@ -120,7 +119,7 @@ body.nav-showing .btn-hamburger {
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   .category-navigation {
     background: transparent;
     margin: 20px 0 0;
@@ -135,7 +134,7 @@ body.nav-showing .btn-hamburger {
   background: #fff;
   box-shadow: inset 0 -1px 0 0 #eee;
   display: none;
-  left: 275px;
+  left: 300px;
   position: fixed;
   right: 0;
   top: 0;
@@ -148,7 +147,7 @@ body.nav-showing .btn-hamburger {
   max-width: calc(100% - 275px);
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   .component-nav {
     display: block;
   }
