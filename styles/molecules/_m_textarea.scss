@@ -1,0 +1,32 @@
+/*doc
+---
+title: Textarea
+name: textArea
+category: molecules
+---
+
+
+```html_example
+
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="textarea browser-default" rows="4"></textarea>
+      </div>
+    </div>
+  </form>
+</div>
+
+```
+
+*/
+
+
+textarea,
+textarea:focus{
+  border: 1px solid color-get('black');
+  width: 100%;
+  padding: 5px;
+  height: 7rem;
+}

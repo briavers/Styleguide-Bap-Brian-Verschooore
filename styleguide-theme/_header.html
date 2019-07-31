@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Acme Styleguide <%= title.length > 0 ? '|' : '' %> <%= title %></title>
+    <title>Digital Styleguide Brian Verschoore</title>
     <link rel="shortcut icon" href="static/favicon.ico" />
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
@@ -21,6 +21,14 @@
 
     <!-- CSS to be documented -->
     <link rel="stylesheet" href="built-styles/css/style.css">
+
+    <!-- Jquery script  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/js/tablesorter.min.js"></script>
+
+    <!-- chart js script  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 
 </head>
   <body class="<%= @blocks.length > 1 ? 'category-nav-showing' : '' %>">
@@ -42,10 +50,9 @@
             </div>
         </li>
         <li><a href="/quarks.html"><i class="material-icons">cloud</i>Quarks</a></li>
-        <li class="disabled"><a href="#!"><i class="material-icons">album</i>Atoms</a></li>
-        <li class="disabled"><a href="#!"><i class="material-icons">bubble_chart</i>Molecules</a></li>
-        <li class="disabled"><a href="#!"><i class="material-icons">view_comfy</i>Organisms</a></li>
-        <li class="disabled"><a href="#!"><i class="material-icons">photo_filter</i>Pages</a></li>
+        <li><a href="/atoms.html"><i class="material-icons">album</i>Atoms</a></li>
+        <li><a href="/molecules.html"><i class="material-icons">bubble_chart</i>Molecules</a></li>
+        <li><a href="/organisms.html"><i class="material-icons">view_comfy</i>Organisms</a></li>
     </ul>
 
 

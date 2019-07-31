@@ -1,0 +1,40 @@
+/*doc
+---
+title: Options field
+name: optionsField
+category: molecules
+---
+
+
+```html_example
+
+<div class="row">
+    <label class="col s6 m4 l3">
+      <input type="checkbox" class="filled-in" checked="checked" />
+      <span>Select me!</span>
+    </label>
+
+    <label class="col s6 m4 l3">
+      <input type="checkbox" class="filled-in"/>
+      <span>Select me!</span>
+    </label>
+
+    <label class="col s6 m4 l3">
+      <input type="checkbox" class="filled-in" disabled="disabled"/>
+      <span>not me!</span>
+    </label>
+</div>
+```
+
+*/
+label{
+  color: color-get('black');
+}
+[type="checkbox"].filled-in:checked + span:not(.lever)::after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid color-get('brown');
+  background-color: color-get('brown');
+  z-index: 0;
+}

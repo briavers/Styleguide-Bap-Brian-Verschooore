@@ -1,27 +1,21 @@
 $colors: (
-  green-sea: #16a085,
-  emerald: #2ecc71,
-  nephritis: #27ae60,
-  // blues
-  peter-river: #3498db,
-  belize-hole: #2980b9,
-  wet-asphalt: #34495e,
-  midnight-blue: #2c3e50,
-  // purples
-  amethyst: #9b59b6,
-  wisteria: #8e44ad,
-  // yellows
-  sunflower: #f1c40f,
-  // oranges
-  carrot: #e67e22,
-  pumpkin: #d35400,
-  // reds
-  alizarin: #e74c3c,
-  pomegranate: #c0392b,
-  // grays
-  clouds: #ecf0f1,
-  concrete: #95a5a6,
-  asbestos: #7f8c8d
+  //contrasts
+  'black': #000000,
+  'darkgrey': #555,
+  'grey': #7b7b7b,
+  'lightgrey': #BEBEBE,
+  'white': #FFF,
+  //vibrants
+  'yellow': #F2DA5E,
+  'lightblue': #07DBF2,
+  'blue': #0554F2,
+  'darkblue': #0540F2,
+  'brown': #73532C,
+
+  // Actions
+  'success': #9EEB46,
+  'alert': #FFC107,
+  'info': #51AFE8
 );
 
 @each $color-name, $color-hex in $colors {

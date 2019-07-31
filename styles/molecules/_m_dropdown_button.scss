@@ -1,0 +1,44 @@
+/*doc
+---
+title: Dropdown button
+name: dropdownButton
+category: molecules
+---
+Inside the website cards will me mostly used for persons lists.
+
+```html_example
+
+<div class="row">
+  <div class="input-field col s2">
+      <select>
+          <option value="1" selected>Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+      </select>
+  </div>
+</div>
+```
+
+*/
+
+.select-dropdown,
+.dropdown-content li,
+.dropdown-content li span{
+  color: color-get('info');
+  font-size: large;
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+}
+.select-wrapper input.select-dropdown{
+  border: 2px solid color-get( 'info' );
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+}
+.select-wrapper .caret{
+  fill: color-get('info');
+}
+.select-wrapper input.select-dropdown:focus {
+  border: 2px solid color-get( 'info' );
+}
