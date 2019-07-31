@@ -4,24 +4,138 @@ title: Buttons
 name: button
 category: atoms
 ---
+There are different styles and effects for buttons.
+
+Normal Buttons
+
 ```html_example
 
-  <div class="btn-group">
-    <button class="btn btn-primary">Save me!</button>
-  </div>
+<div class="btn-group">
+  <button class="btn btn-primary">Save me!</button>
+</div>
+<div class="btn-group">
+  <button class="btn btn-secondary">Click me!</button>
+</div>
 
 ```
+
+Wave effect Buttons (on click)
+
+```html_example
+
+<div class="btn-group">
+  <button class="waves-effect btn btn-primary">Save me!</button>
+</div>
+<div class="btn-group">
+  <button class="waves-effect btn btn-secondary">Click me!</button>
+</div>
+
+```
+
+large button
+
+```html_example
+
+<div class="btn-group">
+  <button class=" btn btn-primary btn-large">Save me!</button>
+</div>
+<div class="btn-group">
+  <button class=" btn btn-secondary btn-large">Click me!</button>
+</div>
+
+```
+
+Outline button
+
+```html_example
+
+<div class="btn-group">
+  <button class=" btn btn-primary-outline">Save me!</button>
+</div>
+<div class="btn-group">
+  <button class=" btn btn-secondary-outline">Click me!</button>
+</div>
+
+```
+
+
 */
 
 .btn {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .btn-primary {
-
   background-color: color-get( 'yellow' );
-
+  color: color-get('brown');
   &:hover {
     background-color: color-get( 'yellow' , 1, -10%);
+  }
+  &:active {
+    background-color: color-get( 'yellow' , 1, -20%);
+  }
+  &:focus {
+    background-color: color-get( 'yellow' , 1, -20%);
+  }
+}
+
+.btn-primary-outline{
+  border: 2px solid color-get( 'yellow' );
+  color: color-get( 'yellow' );
+  background-color: color-get( 'white' );
+  box-shadow: none;
+  &:hover {
+    color: color-get( 'white' );
+    background-color: color-get( 'yellow' , 1, -10%);
+    box-shadow: none;
+  }
+  &:active {
+    color: color-get( 'white' );
+    background-color: color-get( 'yellow' , 1, -20%);
+    box-shadow: none;
+  }
+  &:focus {
+    color: color-get( 'white' );
+    background-color: color-get( 'yellow' , 1, -20%);
+    box-shadow: none;
+  }
+}
+
+
+
+
+.btn-secondary {
+  background-color: color-get( 'info' );
+  color: color-get('white');
+  &:hover {
+    background-color: color-get( 'info' , 1, -10%);
+  }
+  &:active {
+    background-color: color-get( 'info' , 1, -20%);
+  }
+  &:focus {
+    background-color: color-get( 'info' , 1, -20%);
+  }
+}
+
+.btn-secondary-outline{
+  border: 2px solid color-get( 'info' );
+  color: color-get( 'info' );
+  background-color: color-get( 'white' );
+  box-shadow: none;
+  &:hover {
+    color: color-get( 'white' );
+    background-color: color-get( 'info' , 1, -10%);
+    box-shadow: none;
+  }
+  &:active {
+    color: color-get( 'white' );
+    background-color: color-get( 'info' , 1, -20%);
+    box-shadow: none;
+  }
+  &:focus {
+    color: color-get( 'white' );
+    background-color: color-get( 'info' , 1, -20%);
+    box-shadow: none;
   }
 }

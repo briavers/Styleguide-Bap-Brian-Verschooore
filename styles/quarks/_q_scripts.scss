@@ -1,0 +1,42 @@
+/*doc
+---
+title: Scripts
+name: 03_script
+category: quarks
+---
+To make everything run as smooth as possible there are certain scripts required
+
+Header scripts
+
+Jquery scripts
+
+```html_example
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/js/tablesorter.min.js"></script>
+```
+
+Chart JS script
+
+```html_example
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+```
+
+Footer scripts
+
+Materialize script
+
+```html_example
+<script src="static/js/materialize.min.js"></script>
+```
+
+To activate the dropdown button from materialize
+
+```js_example
+
+$(document).ready(function(){
+	$('select').formSelect();
+});
+```
+
+
+*/

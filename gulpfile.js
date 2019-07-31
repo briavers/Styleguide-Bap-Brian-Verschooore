@@ -49,7 +49,7 @@ gulp.task('open', function() {
       app: browser,
       uri: 'http://localhost:8080'
     }))
-})
+});
 
 gulp.task('html', function () {
   gulp.src('./styleguide-dist/*')
@@ -58,15 +58,15 @@ gulp.task('html', function () {
 
 gulp.task('wraith-capture', shell.task([
   'wraith capture test/configs/capture.yaml',
-]))
+]));
 
 gulp.task('wraith-history', shell.task([
   'wraith history test/configs/history.yaml',
-]))
+]));
 
 gulp.task('wraith-latest', shell.task([
   'wraith latest test/configs/history.yaml',
-]))
+]));
 
 gulp.task('deploy', shell.task([
     'cf push'
@@ -74,3 +74,4 @@ gulp.task('deploy', shell.task([
 
 
 gulp.task('default', ['open', 'sass', 'hologram', 'connect', 'watch' ]);
+gulp.task('hs', ['sass', 'hologram']);

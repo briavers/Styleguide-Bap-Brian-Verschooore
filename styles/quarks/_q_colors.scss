@@ -1,7 +1,7 @@
 /*doc
 ---
 title: Colors
-name: color
+name: 01_color
 category: quarks
 ---
 */
@@ -9,8 +9,8 @@ category: quarks
 /*doc
 ---
 title: Contrasts
-parent: color
-name: contrast
+parent: 01_color
+name: 00_contrast
 category: quarks
 ---
 
@@ -74,8 +74,8 @@ category: quarks
 /*doc
 ---
 title: Vibrants
-parent: color
-name: vibrant
+parent: 01_color
+name: 01_vibrant
 category: quarks
 ---
 <div class="row">
@@ -137,8 +137,8 @@ category: quarks
 /*doc
 ---
 title: Actions
-parent: color
-name: action
+parent: 01_color
+name: 02_action
 category: quarks
 ---
 <div class="row">
@@ -179,23 +179,22 @@ category: quarks
 /*doc
 ---
 title: Text colors
-parent: color
-name: textColor
+parent: 01_color
+name: 04_textColor
 category: quarks
 ---
 <div class="row">
     <div class="col s12">
-        <p class= " black">  black </p>
-        <p class =" darkgrey">  darkgrey </p>
-        <p class= " grey">  grey </p>
-        <p class= " lightgrey">  lightgrey </p>
-        <p class= " white">  white </p>
-        <p class= " transparent">  transparent </p>
-        <p class= " yellow">  yellow </p>
-        <p class= " lightblue">  lightblue </p>
-        <p class= " blue">  blue </p>
-        <p class= " darkblue">  darkblue </p>
-        <p class= " brown">  brown </p>
+        <p class= "text-black">  black </p>
+        <p class ="text-darkgrey">  darkgrey </p>
+        <p class= "text-grey">  grey </p>
+        <p class= "text-lightgrey">  lightgrey </p>
+        <p class= "text-white">  white </p>
+        <p class= "text-yellow">  yellow </p>
+        <p class= "text-lightblue">  lightblue </p>
+        <p class= "text-blue">  blue </p>
+        <p class= "text-darkblue">  darkblue </p>
+        <p class= "text-brown">  brown </p>
     </div>
 </div>
 */
