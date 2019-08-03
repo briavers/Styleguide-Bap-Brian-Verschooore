@@ -25,8 +25,7 @@ textarea.materialize-textarea {
 
   // General Styles
   background-color: transparent;
-  border: none;
-  border-bottom: $input-border;
+  border: $input-border;
   border-radius: 0;
   outline: none;
   height: $input-height;
@@ -34,15 +33,16 @@ textarea.materialize-textarea {
   font-size: $input-font-size;
   margin: $input-margin;
   padding: $input-padding;
+
   box-shadow: none;
-  box-sizing: content-box;
   transition: box-shadow .3s, border .3s;
+
 
   // Disabled input style
   &:disabled,
   &[readonly="readonly"] {
     color: $input-disabled-color;
-    border-bottom: $input-disabled-border;
+    border: $input-disabled-border;
   }
 
   // Disabled label style
@@ -53,7 +53,7 @@ textarea.materialize-textarea {
 
   // Focused input style
   &:focus:not([readonly]) {
-    border-bottom: 1px solid $input-focus-color;
+    border: 2px solid $input-focus-color;
     box-shadow: 0 1px 0 0 $input-focus-color;
   }
 
@@ -114,11 +114,11 @@ textarea.materialize-textarea {
 
 /* Validation Sass Placeholders */
 %valid-input-style {
-  border-bottom: 1px solid $input-success-color;
+  border: 1px solid $input-success-color;
   box-shadow: 0 1px 0 0 $input-success-color;
 }
 %invalid-input-style {
-  border-bottom: $input-invalid-border;
+  border: $input-invalid-border;
   box-shadow: 0 1px 0 0 $input-error-color;
 }
 %hidden-text {
@@ -313,7 +313,7 @@ textarea {
   &.materialize-textarea {
     line-height: normal;
     overflow-y: hidden; /* prevents scroll bar flash */
-    padding: .8rem 0 .8rem 0; /* prevents text jump on Enter keypress */
+    padding: .8rem 10px .8rem 10px; /* prevents text jump on Enter keypress */
     resize: none;
     min-height: $input-height;
     box-sizing: border-box;

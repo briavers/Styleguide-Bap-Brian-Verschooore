@@ -1,0 +1,59 @@
+/*doc
+---
+title: Alerts
+name: alert
+category: molecules
+---
+
+
+```html_example
+  <div class="row">
+    <div class="alert alert-success" role="alert">
+      This is a success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      This is a danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+      This is a warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+      This is a info alert—check it out!
+    </div>
+  </div>
+```
+
+*/
+.alert{
+  position: relative;
+  padding: .75rem 1.35rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: .35rem;
+  font-size: large;
+  font-weight: bold;
+}
+.alert-success{
+  color: color-get('success', 1, -15%);
+  background-color: color-get('success', 1, 35%);
+  border-color: color-get('success', 1, 35%);
+}
+.alert-warning{
+  color: color-get('alert');
+  background-color: color-get('alert', 1, 35%);
+  border-color: color-get('alert', 1, 35%);
+}
+.alert-info{
+  color: color-get('info');
+  background-color: color-get('info', 1, 35%);
+  border-color: color-get('info', 1, 35%);
+}
+.alert-danger{
+  color: color-get('danger');
+  background-color: color-get('danger', 1, 35%);
+  border-color: color-get('danger', 1, 35%);
+}

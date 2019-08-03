@@ -15,8 +15,12 @@ $colors: (
   // Actions
   'success': #9EEB46,
   'alert': #FFC107,
-  'info': #51AFE8
+  'info': #51AFE8,
+  'danger': #E51C23
 );
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
 
 @each $color-name, $color-hex in $colors {
   .bg-#{$color-name} {
