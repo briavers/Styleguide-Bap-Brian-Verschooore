@@ -323,6 +323,9 @@ $grey: (
   "darken-3":   #424242,
   "darken-4":   #212121
 );
+$info: (
+  "base":       #51AFE8,
+);
 
 $shades: (
   "black":        #000000,
@@ -351,6 +354,7 @@ $colors: (
   "brown": $brown,
   "blue-grey": $blue-grey,
   "grey": $grey,
+  "info": $info,
   "shades": $shades
 ) !default;
 

@@ -1,10 +1,11 @@
 $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
 //use materialise as main style
 @import 'materialize/materialize';
 
+
 @import 'variables';
 @import 'functions';
+
 
 
 @import 'alert';
@@ -15,6 +16,8 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI"
 @import 'modal';
 @import 'mixins';
 @import 'tables';
+@import 'helpers';
+@import 'flex';
 
 @import "quarks/q_typography";
 @import "quarks/q_colors";
@@ -30,6 +33,7 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI"
 @import "molecules/m_input_field";
 @import "molecules/m_options_field";
 @import "molecules/m_textarea";
+@import "molecules/m_alerts";
 
 @import "organisms/o_tables";
 

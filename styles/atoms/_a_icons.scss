@@ -19,3 +19,6 @@ Icon (sm, md, lg, xl)                                                           
 .material-icons.md { font-size: 24px; }
 .material-icons.lg { font-size: 36px; }
 .material-icons.xl { font-size: 48px; }
+.material-icons{
+  color: color-get('info');
+}
