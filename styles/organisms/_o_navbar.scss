@@ -1,0 +1,23 @@
+.sidenav-yellow{
+  background-color: color-get('yellow');
+  color: color-get('white');
+
+  li{
+    border-bottom: 2px solid color-get('white');
+    .disabled{
+      background-color: color-get('darkgrey');
+      pointer-events: none;
+      cursor: not-allowed;
+      &:hover{
+        background-color: color-get('darkgrey');
+        pointer-events: none;
+        cursor: not-allowed;
+      }
+    }
+    a{
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: color-get('white');
+    }
+  }
+}

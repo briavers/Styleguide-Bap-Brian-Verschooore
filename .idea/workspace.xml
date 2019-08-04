@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4ad45d32-bd8d-424f-8ddf-0ed86b935132" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_a_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_a_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/atoms/_a_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/atoms/_a_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/materialize/components/_color-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/materialize/components/_color-variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/materialize/components/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/materialize/components/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/materialize/components/forms/_input-fields.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/materialize/components/forms/_input-fields.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/molecules/_m_input_field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/molecules/_m_input_field.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/molecules/_m_options_field.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/molecules/_m_options_field.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/molecules/_m_textarea.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/molecules/_m_textarea.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/quarks/_q_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/quarks/_q_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/materialize/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/materialize/components/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/materialize/components/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/materialize/components/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,28 +25,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/styles/atoms/_a_buttons.scss">
+        <entry file="file://$PROJECT_DIR$/styles/_helpers.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="226" column="1" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
+            <state relative-caret-position="362">
+              <caret line="277" column="1" lean-forward="true" selection-start-line="277" selection-start-column="1" selection-end-line="277" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/materialize/components/_buttons.scss">
+        <entry file="file://$PROJECT_DIR$/styles/materialize/components/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="66" column="7" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="7" />
+            <state relative-caret-position="136">
+              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/atoms/_a_icons.scss">
+        <entry file="file://$PROJECT_DIR$/styles/organisms/_o_tables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="216">
+              <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/organisms/_o_navbar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/quarks/_q_colors.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-454">
+              <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/molecules/_m_cards.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/quarks/_q_typography.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-214">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/materialize/components/_cards.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="187" column="18" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -62,11 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.styleguide-content</find>
-      <find>600</find>
-      <find>btn-primary</find>
-      <find>yellow</find>
-      <find>text-</find>
       <find>emoji</find>
       <find>secundary</find>
       <find>sm</find>
@@ -92,6 +143,11 @@
       <find>flex</find>
       <find>d-flex</find>
       <find>color</find>
+      <find>point</find>
+      <find>$grid-brea</find>
+      <find>pointer</find>
+      <find>card-title</find>
+      <find>valign-wrapper</find>
     </findStrings>
     <replaceStrings>
       <replace>col s</replace>
@@ -108,8 +164,8 @@
     <dirStrings>
       <dir>C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\bootstrap</dir>
       <dir>C:\Users\brian\Code\1819-BAP-Digital-Styleguide</dir>
-      <dir>C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\materialize</dir>
       <dir>C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles</dir>
+      <dir>C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\materialize</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -118,9 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulp/config/config.json" />
-        <option value="$PROJECT_DIR$/gulp/config/config-default.json" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/styles/materialize/components/_custom.scss" />
         <option value="$PROJECT_DIR$/styles/materialize/materialize.scss" />
@@ -163,16 +216,19 @@
         <option value="$PROJECT_DIR$/styles/_functions.scss" />
         <option value="$PROJECT_DIR$/styles/quarks/_q_colors.scss" />
         <option value="$PROJECT_DIR$/styles/molecules/_m_alerts.scss" />
-        <option value="$PROJECT_DIR$/styles/_helpers.scss" />
-        <option value="$PROJECT_DIR$/styles/style.scss" />
         <option value="$PROJECT_DIR$/styles/_flex.scss" />
         <option value="$PROJECT_DIR$/styles/_variables.scss" />
         <option value="$PROJECT_DIR$/styles/atoms/_a_icons.scss" />
         <option value="$PROJECT_DIR$/styles/atoms/_a_buttons.scss" />
+        <option value="$PROJECT_DIR$/styles/materialize/components/_cards.scss" />
+        <option value="$PROJECT_DIR$/styles/style.scss" />
+        <option value="$PROJECT_DIR$/styles/organisms/_o_navbar.scss" />
+        <option value="$PROJECT_DIR$/styles/materialize/components/_global.scss" />
+        <option value="$PROJECT_DIR$/styles/_helpers.scss" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -282,7 +338,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/organisms" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -293,19 +349,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\organisms" />
+      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles" />
+      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\molecules" />
+      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\quarks" />
+      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styleguide-theme\static\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles" />
       <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styleguide-theme\static" />
       <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styleguide-theme" />
       <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styleguide-dist\static" />
       <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\quarks" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles" />
-      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\molecules" />
-      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\quarks" />
-      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styleguide-theme\static\js" />
-      <recent name="C:\Users\brian\Code\1819-BAP-Digital-Styleguide\styles\atoms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,15 +434,16 @@
       <workItem from="1564598388512" duration="362000" />
       <workItem from="1564598879015" duration="10902000" />
       <workItem from="1564735166186" duration="5871000" />
-      <workItem from="1564816299429" duration="1571000" />
+      <workItem from="1564816299429" duration="5961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78932000" />
+    <option name="totallyTimeSpent" value="83322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -416,19 +473,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/_forms.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styleguide-theme/static/placeholder.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/_modal.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/_icons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -436,24 +480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/materialize/_custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/_cards.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/molecules/_m_charts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -471,13 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="44157" selection-start-column="44157" selection-end-column="44157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/atoms/_a_images.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -499,13 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/quarks/_q_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -539,13 +555,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO437F62BE/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/styles/organisms/_o_tables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/molecules/_m_options_field.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -602,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/molecules/_m_cards.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/_functions.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -630,27 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/quarks/_q_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="151" column="19" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/materialize/components/_waves.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -661,20 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="122" column="34" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/_helpers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6216">
-          <caret line="262" column="20" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -713,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/atoms/_a_icons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -727,17 +687,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="66" column="7" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/atoms/_a_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="226" column="1" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/atoms/_a_images.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/materialize/_custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="151" column="19" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/molecules/_m_charts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/molecules/_m_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="187" column="18" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/quarks/_q_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-214">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/organisms/_o_tables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/quarks/_q_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/organisms/_o_navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/materialize/components/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/_helpers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="277" column="1" lean-forward="true" selection-start-line="277" selection-start-column="1" selection-end-line="277" selection-end-column="1" />
         </state>
       </provider>
     </entry>

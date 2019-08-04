@@ -267,3 +267,21 @@ $grid-breakpoints: (
   display: flex;
   flex-flow: column-reverse nowrap;
 }
+.clickable{
+  cursor: pointer;
+}
+a.no-color{
+  color: unset;
+}
+.w-25{
+  width: 25%;
+}
+.w50{
+  width: 50%;
+}
+.w-75{
+  width: 75%;
+}
+.w-100{
+  width: 100%;
+}
