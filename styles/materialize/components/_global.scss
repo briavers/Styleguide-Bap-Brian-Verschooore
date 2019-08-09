@@ -354,6 +354,9 @@ ul.staggered-list li {
   @media #{$small-and-down} {
     display: block !important;
   }
+  @media #{$medium-and-up}{
+    display: none !important;
+  }
 }
 .show-on-medium-and-up {
   @media #{$medium-and-up} {

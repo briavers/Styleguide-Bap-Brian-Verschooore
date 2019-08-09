@@ -30,3 +30,11 @@ category: quarks
     </div>
 </div>
 */
+
+a.no-style, a.no-style:hover, a.no-style:active, a.no-style:visited {
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+}

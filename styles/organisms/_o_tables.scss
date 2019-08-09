@@ -202,3 +202,20 @@ category: organisms
 .data-info{
   font-style: italic;
 }
+
+.chat-row{
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.table-30{
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+.table-40{
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+.table-50{
+  max-height: 50vh;
+  overflow-y: scroll;
+}
