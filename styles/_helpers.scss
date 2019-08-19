@@ -330,3 +330,29 @@ a.no-color{
 .w-100{
   width: 100%;
 }
+.d-contents{
+  display: contents;
+}
+.document{
+  border: 1px solid brown;
+  height: 75vh;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+.page {
+  margin: 0;
+  padding: 50px;
+}
+
+@media(min-width: 992px) {
+  .page {
+    margin-left: 275px;
+    padding: 25px 100px;
+  }
+}
+.height-image-card{
+  height: 30vh ;
+  max-height: 235px ;
+  object-fit: cover;
+}

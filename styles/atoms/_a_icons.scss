@@ -8,10 +8,10 @@ Because of the usage of google materialize and [emoji](https://afeld.github.io/e
 
 Icon (sm, md, lg, xl)                                                                                                                                                                                                     | Icon name
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------
- <i class="material-icons  sm">delete\_forever</i>    <i class="material-icons md">delete\_forever</i>     <i class="material-icons lg">delete\_forever</i>    <i class="material-icons xl">delete\_forever</i>         | `delete_forever`
- <i class="material-icons  sm">edit</i>               <i class="material-icons  md">edit</i>                <i class="material-icons  lg">edit</i>                <i class="material-icons  xl">edit</i>                  | `edit`
- <i class="material-icons  sm">print</i>              <i class="material-icons  md">print</i>               <i class="material-icons  lg">print</i>               <i class="material-icons  xl">print</i>                 | `print`
- <i class="material-icons  sm">arrow\_drop\_down</i>  <i class="material-icons  md">arrow\_drop\_down</i>   <i class="material-icons  lg">arrow\_drop\_down</i>   <i class="material-icons  xl">arrow\_drop\_down</i>     | `arrow_drop_down`
+ <i class="material-icons text-info sm">delete\_forever</i>    <i class="material-icons text-info md">delete\_forever</i>     <i class="material-icons text-info lg">delete\_forever</i>    <i class="material-icons text-info xl">delete\_forever</i>        | `delete_forever`
+ <i class="material-icons text-info sm">edit</i>               <i class="material-icons text-info md">edit</i>                <i class="material-icons text-info lg">edit</i>                <i class="material-icons text-info xl">edit</i>                  | `edit`
+ <i class="material-icons text-info sm">print</i>              <i class="material-icons text-info md">print</i>               <i class="material-icons text-info lg">print</i>               <i class="material-icons text-info xl">print</i>                 | `print`
+ <i class="material-icons text-info sm">arrow\_drop\_down</i>  <i class="material-icons text-info md">arrow\_drop\_down</i>   <i class="material-icons text-info lg">arrow\_drop\_down</i>   <i class="material-icons text-info xl">arrow\_drop\_down</i>     | `arrow_drop_down`
 
 */
 
@@ -19,6 +19,3 @@ Icon (sm, md, lg, xl)                                                           
 .material-icons.md { font-size: 24px; }
 .material-icons.lg { font-size: 36px; }
 .material-icons.xl { font-size: 48px; }
-.material-icons{
-  color: color-get('info');
-}

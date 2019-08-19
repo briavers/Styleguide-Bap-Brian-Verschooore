@@ -24,3 +24,13 @@ category: molecules
 ```
 
 */
+.disabled, .disabled input{
+  pointer-events: none;
+  background-color: #DFDFDF !important;
+  box-shadow: none;
+  color: #9F9F9F !important;
+  cursor: default;
+}
+.cke_editable {
+  margin: 20px;
+}
